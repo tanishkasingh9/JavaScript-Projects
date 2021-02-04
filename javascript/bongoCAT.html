@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Bongo Cat
+        </title>
+          
+    </head>
+
+    <body>
+        <h1> Welcome to the Bongo Cat show</h1>
+        <img src="1.png" id="lup" alt="lup">
+        <p> click to make Bongo cat play a song</p>
+
+        <script type="text/javascript">
+            
+            window.onclick = function(e) { 
+                //console.log("hello")
+                var audio = new Audio("bongo.wav");
+                var image = document.getElementById('lup');
+                audio.play()
+                if (image.src.match("1.png")) {
+                    image.src = "2.png";
+                    
+                    
+                            }
+                else {
+                    image.src = "1.png";
+                    
+                    
+                            }
+                
+
+                };
+        
+        </script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Bongo Cat
+        </title>
+          
+    </head>
+
+    <body>
+        <h1> MOVE ME</h1>
+        <canvas id="canvasDemo" height="1000" width="800">
+            Sorry, your browser does not support canvas.
+            </canvas>
+
+        <script type="text/javascript">
+
+                var context=document.getElementById("canvasDemo").getContext("2d");
+                context.fillStyle = 'rgb(200, 0, 0)';
+                context.fillRect(10, 10, 50, 50);
+                context.fillStyle = 'rgba(0, 0, 200, 0.5)';
+                context.fillRect(30, 30, 50, 50);
+
+                for (var i =0;i<200;i++){
+                
+                context.clearRect(i+10, i+10, 50, 50);
+                context.fillRect(i+30, i + 30, 50, 50);
+
+                context.fillStyle = 'rgb(200, 0, 0)';
+                context.fillRect(i+11, i+11, 50, 50);
+                context.fillStyle = 'rgba(0, 0, 200, 0.5)';
+                context.fillRect(i+31, i + 31, 50, 50);
+
+                
+                
+
+
+                    
+                }
+            
+            //window.onclick = function(e) { 
+                //console.log("hello")
+                // console.log(e.pageX, e.pageY)
+                
+                
+                
+                // context.strokeStyle="green";
+                // context.fillStyle="red";
+                // context.strokeRect(e.pageX,e.pageY,80,80);
+                //context.fillRect(80,80,60,60);
+                //context.clearRect(95,95,30,30);
+                // var ctx = document.getElementById("canvasDemo").getContext("2d");
+                // var img =new Image();
+                // img.onload=function(){
+                // ctx.drawImage(img,15,25);
+                // }
+                // img.src="1.png";
+
+
+            //}
+
+        
+        </script>
+    </body>
+
+    
+</html>
